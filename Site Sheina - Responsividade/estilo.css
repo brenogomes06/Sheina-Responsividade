@@ -1,0 +1,293 @@
+
+body
+{
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(151, 151, 151);
+
+}
+
+/* --------------------------- PC -------------------------- */
+
+/* Cabeçalho */
+header
+{
+    background-color: rgb(255, 255, 255);
+    height: 90px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header-links, .header-image, .header-title, .header-carrinho
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Cabeçalho - Links */
+.header-links a
+{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0px 10px;
+    text-align: center;
+    color: black;
+}
+
+.header-links a:hover
+{
+    font-weight: bold;
+    color: rgb(23, 15, 255);
+}
+
+/* Cabeçalho - Imagem Menu */
+.header-image
+{
+    display: none;
+}
+
+
+
+/* Cabeçalho - Titulo */
+.header-title
+{
+    margin: 0px 70px 0px 0px;
+}
+
+.header-title h1
+{
+    font-size: 78px;
+    color: rgb(6, 6, 6);
+    margin: 0px;
+    text-shadow: 2px 2px 1px rgb(77, 188, 200);
+}
+
+
+/* Cabeçalho - Carrinho */
+.header-carrinho img
+{
+    margin: 0px 50px 0px 0px;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.header-carrinho :hover
+{
+    border-bottom: 4px solid rgb(12, 109, 255);
+}
+
+
+
+
+
+
+/* PRODUTOS -> TITULO */
+.produtos-titulo
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+}
+
+.produtos-titulo h2
+{
+    margin: 0px;
+    margin-left: 20px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(109, 168, 240);
+
+}
+
+/* PRODUTOS -> LISTA DE ITENS */
+
+.produtos-itens
+{
+    display: flex;
+}
+
+.produtos-itens ul
+{
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1;
+}
+
+/* CADA PRODUTO */
+
+.produtos-itens ul li
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    padding: 10px 0px;
+    margin: 10px 20px 20px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.produtos-itens ul li:hover
+{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+/* CADA PRODUTO -> NOME PRODUTO */
+.produtos-itens ul li h2
+{
+    margin-top: 0px; 
+    font-weight: normal;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* CADA PRODUTO -> PREÇO PRODUTO */
+.produtos-itens-preco
+{
+   margin: 15px 0px 15px 0px; 
+ 
+   color: rgb(1, 98, 255);
+   font-size: 30px;
+}
+
+/* CADA PRODUTO -> COMPROU PRODUTO */
+.produtos-itens-comprar
+{
+    margin: 15px 0px 15px 0px; 
+}
+
+/* CADA PRODUTO -> BOTAO COMPRAR PRODUTO */
+.produtos-itens-comprar button
+{
+    font-size: 19px;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 3px 30px;
+}
+
+.produtos-itens-comprar button:hover
+{
+    background-color: orange;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/* IPAD E TABLET */
+@media (min-width:700px) and (max-width:1000px)
+{
+    /* Cabeçalho - Links */
+    .header-links a
+    {
+        font-size: 15px;
+    }
+
+    /* Cabeçalho - Titulo */
+    .header-title
+    {
+        margin: 0px 20px 0px 10px;
+    }
+
+    .header-title h1
+    {
+        font-size: 55px;
+    }
+
+    /* Cabeçalho - Carrinho */
+    .header-carrinho img
+    {
+        margin: 0px 20px 0px 0px;
+        width: 50px;
+        height: 50px;
+    }
+   
+
+}
+
+
+/* CELULAR */
+@media (max-width:700px)
+{
+    /* Cabeçalho - Titulo */
+    .header-title
+    {
+        margin: 0px 0px 0px 0px;
+    }
+    .header-title h1
+    {
+        font-size: 45px;
+    }
+
+    /* Cabeçalho - Links */
+    .header-links
+    {
+       display: none;
+    }
+
+    /* Cabeçalho - Links */
+    .header-image
+    {
+       display: flex;
+    }
+
+    .header-image img
+    {
+        width: 35px;
+        height: 40px;
+        margin: 0px 0px 0px 10px;
+    }
+
+     /* Cabeçalho - Carrinho */
+    .header-carrinho img
+    {
+        margin: 0px 10px 0px 0px;
+        width: 40px;
+        height: 40px;
+        
+    }
+
+
+    /* PRODUTOS -> TITULO */
+    .produtos-titulo
+    {
+        justify-content: center;
+    }
+    
+    .produtos-titulo h2
+    {
+        margin-top: 10px;
+        margin-left: 0px;
+        font-size: 35px;
+    }
+
+    /* CADA PRODUTO */
+    .produtos-itens ul li
+    {
+        width: 200px;
+        margin: 30px 20px 20px 10px;
+    }
+
+   
+
+   
+
+}
